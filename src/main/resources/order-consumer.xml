@@ -4,6 +4,6 @@
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="order-consumer"/>
-    <dubbo:registry address="zookeeper://120.77.155.207:80"/>
-    <dubbo:reference id="orderService" interface="com.ruijie.order.OrderService"/>
+    <dubbo:registry address="zookeeper://192.168.99.100:2181"/>
+    <dubbo:reference id="orderService" interface="com.ruijie.order.service.OrderService"/>
 </beans>
